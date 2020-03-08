@@ -4,7 +4,7 @@ require 'bundler/setup'
 Bundler.require(:default, ENV['SINATRA_ENV'])
 
 configure :development do
-  set :database, 'sqlite3:db/migrate/users1.db'
+  set :database, 'sqlite3:db/migrate/users.db'
 end
 
 ActiveRecord::Base.establish_connection(
